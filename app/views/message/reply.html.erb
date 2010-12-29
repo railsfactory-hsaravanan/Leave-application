@@ -1,0 +1,12 @@
+<br>
+<%= form_for :data, :url=>{:action=>"show"} do |f|%>
+<tr><td><%= f.label :"Name" %></td><br>
+<td><%= f.text_field:name%></td><br>
+<tr><td><%= f.label :"Message" %></td><br>
+<td><%= f.text_area :message%></td></tr><br>
+<tr><td><%= f.submit :"Click"%></td></tr>
+<% end %>
+
+
+
+

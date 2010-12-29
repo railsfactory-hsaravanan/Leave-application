@@ -1,0 +1,7 @@
+<tr><td><h1>&nbsp;Welocome&nbsp;&nbsp;<%= $loginname %></h1></td></tr><br><br>
+<tr><td><%= link_to "Logout",:controller=>"message",:action=>"index"%></td></tr><br><br>
+<tr><td><%= link_to "Inbox(#{@count})",:id=>@v, :controller=>"message",:action=>"inbox" %></td></tr><br><br>
+<tr><td><%= link_to "Click here to send the SMS",:controller=>"message",:action=>"compose"%></td></tr><br><br>
+
+
+

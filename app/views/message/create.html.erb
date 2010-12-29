@@ -1,0 +1,15 @@
+<h1>SignUp Page</h1>
+<table>
+<%= form_for :data, :url=>{:action=>"login"} do |f|%>
+<tr><td><%= f.label :"Name" %></td>
+<td><%= f.text_field:name%></td></tr>
+<tr><td><%= f.label :"LogId" %></td>
+<td><%= f.text_field:logid%></td></tr>
+<tr><td><%= f.label :"Password" %></td>
+<td><%= f.password_field :pwd%></td></tr><br>
+<tr><td><%= f.label :"Contact no" %></td>
+<td><%= f.text_field:contact%></td></tr>
+<tr><td><%= f.submit :"Click"%></td></tr>
+<% end %>
+</table>
+

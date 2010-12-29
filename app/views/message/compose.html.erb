@@ -1,0 +1,13 @@
+<br>
+<%= link_to "Back To the Home Page",:controller=>"message",:action=>"msg"%><br><br>
+<%= form_for :data, :url=>{:action=>"show"} do |f|%>
+<tr><td><%= f.label :"Mobileno" %></td><br>
+<td><%= f.text_field:contact%></td></tr><br>
+<%= hidden_field_tag 'id', @v %>
+<tr><td><%= f.label :"Message" %></td><br>
+<td><%= f.text_area :message%></td></tr><br>
+<tr><td><%= f.submit :"Click"%></td></tr>
+<% end %>
+</table>
+<%=@v%>
+

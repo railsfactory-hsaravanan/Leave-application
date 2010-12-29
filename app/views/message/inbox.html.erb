@@ -1,0 +1,12 @@
+<br><br>
+<%= link_to "Back To the Home Page",:controller=>"message",:action=>"msg"%><br><br>
+<table>
+<% for i in 0...@name.size do %>
+<tr><td>&nbsp;<%= @name[i] %></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= @message[i] %></td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to "Reply",:id=>@name[i],:controller=>"message",:action=>"reply"%></td></tr><br><br>
+<%end%>
+</table>
+
+
+
